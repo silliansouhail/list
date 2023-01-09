@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { deleteTask, editTask, filterTask } from '../redux/taskSlice'
+import {AiOutlineCheck,AiOutlineEdit} from 'react-icons/ai'
+import {BsTrash} from 'react-icons/bs'
 
 import "./Task.css"
 
@@ -25,10 +27,10 @@ const Task = (props) => {
     <div>
         {!tobe&&
         <div className='task__container' >
-            <button className="don" onClick={handleFilter}>complete</button>
-            <input className="task" onChange={(e)=>taskToEdit(e)} placeholder={props.task}/>
-            <button className="edit" onClick={handleEdit}>Edit Task</button>
-            <button className="delete" onClick={handleDelete}>Delete Task</button>
+            <button className="don" onClick={handleFilter}><AiOutlineCheck className='logos'/></button>
+            <input  onChange={(e)=>taskToEdit(e)} placeholder={props.task}/>
+            <button className="edit" onClick={handleEdit}><AiOutlineEdit className='logos'/></button>
+            <button className="delete" onClick={handleDelete}><BsTrash className='logos'/></button>
         </div>}
     </div>
   )

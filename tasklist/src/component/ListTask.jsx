@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
+import {BsChevronDoubleDown} from"react-icons/bs"
 import AddTask from './AddTask'
 import Task from './Task'
 
@@ -27,13 +28,14 @@ const ListTask = () => {
     }
     console.log(cont());
     let s = cont();
+
   return (
     <div className='list'>
         {list.map(({...list})=>{
                 return(<Task key={list.id} id={list.id} task={list.task} status={list.status}/>)})}
         <AddTask/>
         <label>{`Completed Task ${s}`} </label>
-        <button onClick={toggleOn}>See the Task</button>
+        {s&&<button onClick={toggleOn}>See the Task <BsChevronDoubleDown className='logo' /> </button>}
         {on&&list.map(({...list})=>{
                 return(<CompletedTask key={list.id} id={list.id} task={list.task} status={list.status}/>)})}
     </div>

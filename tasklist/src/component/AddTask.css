@@ -1,0 +1,39 @@
+.task__add{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    background: rgba(0,0,0,0.4);
+    width:max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+}
+.task__add>button{
+    padding: 1px 20px 1px 20px;
+    align-items: center;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 3rem;
+    background-color: #345995;
+    color: #C8BFC7;
+    border: none;
+}
+.task__add>button:hover{
+    background-color:#7A9B76 ;
+    color:#191516 ;
+    transition: all 400ms ease;
+}
+.task__add>input{
+    text-align: center;
+    font-size: medium;
+    border-radius: 3rem;
+    border: none;
+}

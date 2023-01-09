@@ -1,0 +1,8 @@
+.completed__task>.completed>span{
+    text-decoration: #C8BFC7;
+    color: #C8BFC7;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+}

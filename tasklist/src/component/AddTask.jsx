@@ -21,9 +21,9 @@ const AddTask = () => {
     }
 
     return (
-        <div>
-            <input type="text"  onChange={(e)=>taskToAdd(e)} placeholder='The Task To Add' className="task" />
-            <button className="add" onClick={add} >Add</button>
+        <div className="task__add">
+            <input type="text"  onChange={(e)=>taskToAdd(e)} placeholder='The Task To Add'/>
+            <button onClick={add} >Add</button>
         </div>
     )
 }

@@ -1,0 +1,32 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 20px;
+    background-color: #191516;
+    gap: 1rem;
+    padding: 10px;
+}
+.list>label{
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    color:#C8BFC7 ;
+}
+.list>button{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    border: none;
+    background-color: #345995;
+    color: #C8BFC7;
+    font-weight: bold;
+    font-size: medium;
+}

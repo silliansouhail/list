@@ -1,0 +1,32 @@
+.task__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    margin: 10px 5px;
+}
+.task__container>button{
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:5px;
+}
+.task__container>input{
+    text-align: center;
+    font-size: medium;
+    border-radius: 3rem;
+    border: none;
+}
+.don{
+    background-color:#4ebe3a ;
+}
+.edit{
+    background-color:#345995 ;
+}
+.delete{
+    background-color:#DC143C ;
+}
